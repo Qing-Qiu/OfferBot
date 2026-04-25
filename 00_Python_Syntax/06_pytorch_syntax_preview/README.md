@@ -12,3 +12,7 @@
 
 当前状态：待展开。
 
+当前内容：
+
+- [01_tensor_autograd_module_preview.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/06_pytorch_syntax_preview/01_tensor_autograd_module_preview.md)
+- [01_tensor_autograd_module_preview.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/06_pytorch_syntax_preview/01_tensor_autograd_module_preview.py)
