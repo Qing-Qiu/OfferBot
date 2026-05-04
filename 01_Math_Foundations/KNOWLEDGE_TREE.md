@@ -5,17 +5,32 @@
 ## 建议小章节
 
 ```text
-01_linear_algebra
-02_calculus_and_gradient
-03_probability
-04_statistics
-05_information_theory
-06_optimization
-07_matrix_derivatives
-08_ai_formula_playbook
+01_linear_algebra_review
+02_chain_rule_and_gradient
+03_probability_statistics
+04_information_theory
+05_optimization
+06_matrix_derivatives
+07_recsys_math
+08_llm_math
+09_formula_playbook
 ```
 
 说明：上面的小章节对应学习模块；下面的 A/B/C... 继续保留为可展开的叶子知识点树。
+
+## 必学项映射
+
+```text
+A1-A12 -> 01_linear_algebra_review
+B2-B6, B10-B12 -> 02_chain_rule_and_gradient
+C1-C12, D1-D12 -> 03_probability_statistics
+E1-E9 -> 04_information_theory
+F1-F12 -> 05_optimization
+G1-G10 -> 06_matrix_derivatives
+H1-H10 -> 07_recsys_math
+I1-I10 -> 08_llm_math
+高频公式总复习 -> 09_formula_playbook
+```
 
 ## A. 线性代数
 
