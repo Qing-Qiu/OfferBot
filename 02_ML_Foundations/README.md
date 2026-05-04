@@ -21,6 +21,9 @@
 ## 当前内容
 
 - `01_numpy_linear_regression_from_scratch.py`：NumPy 从零手写线性回归，理解前向、MSE、梯度下降和训练循环。
+- [03_logistic_regression](./03_logistic_regression/README.md)：logits、sigmoid、BCE、分类阈值、softmax 回归。
+- [04_loss_functions](./04_loss_functions/README.md)：MSE、MAE、BCE、cross entropy、LogLoss、loss vs metric。
+- [07_model_evaluation](./07_model_evaluation/README.md)：回归/分类指标、ROC-AUC、PR-AUC、混淆矩阵、类别不平衡。
 
 补充说明：
 
