@@ -21,6 +21,12 @@
 - 系统设计：推荐系统、RAG 系统、搜索排序系统、广告系统。
 - 线上实验：A/B 测试、指标、显著性、灰度发布。
 
+## 当前内容
+
+- [01_mlops_overview](./01_mlops_overview/README.md)：训练、评估、部署、监控、灰度、回滚。
+- [05_model_serving](./05_model_serving/README.md)：online/batch inference、REST/gRPC、缓存、限流、降级、延迟吞吐。
+- [11_system_design_interview](./11_system_design_interview/README.md)：AI 系统设计答题框架、推荐/RAG/向量召回通用模板。
+
 ## 学习方式
 
 每个系统设计题都按同一模板沉淀：
@@ -35,4 +41,3 @@
 7. 风险与兜底
 8. 面试追问
 ```
-
