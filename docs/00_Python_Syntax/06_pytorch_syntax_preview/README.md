@@ -1,1 +1,0 @@
---8<-- "00_Python_Syntax/06_pytorch_syntax_preview/README.md"

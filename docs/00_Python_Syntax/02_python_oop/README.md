@@ -1,1 +1,0 @@
---8<-- "00_Python_Syntax/02_python_oop/README.md"

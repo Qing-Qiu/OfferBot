@@ -1,1 +1,0 @@
---8<-- "00_Python_Syntax/KNOWLEDGE_TREE.md"

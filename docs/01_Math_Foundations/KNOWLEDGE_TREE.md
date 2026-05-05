@@ -1,1 +1,0 @@
---8<-- "01_Math_Foundations/KNOWLEDGE_TREE.md"

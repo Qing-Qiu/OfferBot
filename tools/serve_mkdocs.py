@@ -7,7 +7,8 @@ from mkdocs.__main__ import cli
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TMP_ROOT = Path(os.environ.get("OFFERBOT_MKDOCS_TMP", str(ROOT / "site" / ".mkdocs_tmp")))
+DEFAULT_TMP_ROOT = ROOT / ".mkdocs_tmp"
+TMP_ROOT = Path(os.environ.get("OFFERBOT_MKDOCS_TMP", str(DEFAULT_TMP_ROOT)))
 TMP_DIR = TMP_ROOT.resolve()
 TMP_DIR.mkdir(parents=True, exist_ok=True)
 
