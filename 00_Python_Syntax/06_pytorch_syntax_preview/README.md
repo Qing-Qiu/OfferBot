@@ -15,4 +15,4 @@
 当前内容：
 
 - [01_tensor_autograd_module_preview.md](./01_tensor_autograd_module_preview.md)
-- [01_tensor_autograd_module_preview.py](./01_tensor_autograd_module_preview.py)
+- 配套代码：`01_tensor_autograd_module_preview.py`

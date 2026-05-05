@@ -1,0 +1,1 @@
+--8<-- "00_Python_Syntax/04_numpy_basics/02_shape_and_matmul_drills.md"

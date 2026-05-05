@@ -1,6 +1,20 @@
 # OfferBot 本地面试私教学习引擎
 
-本项目只维护解耦的本地学习资料，不搭建 Web、前后端或额外服务。资料按主题沉淀为 `.md` 教程和 `.py` 手写实现；当你提交自己的代码让我审查时，我会采用严苛面试官模式，只做问题定位、复杂度分析、评分和启发式追问，不直接给出优化后的完整代码。
+本项目只维护解耦的本地学习资料，不搭建业务 Web、前后端或额外服务。资料按主题沉淀为 `.md` 教程和 `.py` 手写实现；MkDocs 只作为本地静态浏览层，方便阅读和搜索，不改变源文件组织方式。
+
+当你提交自己的代码让我审查时，我会采用严苛面试官模式，只做问题定位、复杂度分析、评分和启发式追问，不直接给出优化后的完整代码。
+
+## 当前状态
+
+OfferBot 现在是“知识树骨架 + 核心样章 + 本地文档站”的阶段，不是已经完课的全量课程。
+
+```text
+已较完整：01_Math_Foundations
+已铺底：02_ML_Foundations, 03_PyTorch, 04_RecSys, 05_LLM, 06_AI_Engineering
+待重点补强：00_Python_Syntax, 07_Algorithm
+```
+
+后续新增内容时，优先保证“入口说明、知识树、实际文件、MkDocs 导航”四者一致。
 
 ## 目录结构
 
@@ -14,8 +28,12 @@ OfferBot/
 ├── 05_LLM/              # 大模型机制：Attention、Transformer、RAG、微调、推理优化
 ├── 06_AI_Engineering/   # AI 工程化：MLOps、服务、数据链路、系统设计
 ├── 07_Algorithm/        # 算法面试：数据结构、高频范式、DP、图论、Hard 题
+├── docs/                # MkDocs 包装层，只引用源讲义
 ├── KNOWLEDGE_TREE_INDEX.md
 ├── LEARNING_MAP.md
+├── MKDOCS_GUIDE.md
+├── mkdocs.yml
+├── requirements-docs.txt
 └── README.md
 ```
 
@@ -102,4 +120,3 @@ OfferBot/
 - 双指针、滑动窗口、二分、回溯、贪心、单调栈。
 - 动态规划：背包、区间 DP、状态压缩、树形 DP。
 - 高频题训练方式：每题沉淀 `.py` 实现和 `.md` 面试追问。
-

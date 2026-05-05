@@ -1,1 +1,0 @@
---8<-- "03_PyTorch/00_deep_learning_foundations.md"

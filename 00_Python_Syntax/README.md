@@ -41,7 +41,7 @@
 当前已落地：
 
 - [01_class_self_init.md](./02_python_oop/01_class_self_init.md)
-- [01_class_self_init_examples.py](./02_python_oop/01_class_self_init_examples.py)
+- 配套代码：`02_python_oop/01_class_self_init_examples.py`
 
 ### 03_python_code_reading
 
@@ -64,7 +64,9 @@
 当前已落地：
 
 - [01_core_syntax.md](./04_numpy_basics/01_core_syntax.md)
-- [01_core_syntax_examples.py](./04_numpy_basics/01_core_syntax_examples.py)
+- [02_shape_and_matmul_drills.md](./04_numpy_basics/02_shape_and_matmul_drills.md)
+- 配套代码：`04_numpy_basics/01_core_syntax_examples.py`
+- 配套代码：`04_numpy_basics/02_shape_and_matmul_drills.py`
 
 ### 05_pandas_basics
 
@@ -81,6 +83,11 @@
 - `forward`
 - `backward`
 - `optimizer.step()`
+
+当前已落地：
+
+- [01_tensor_autograd_module_preview.md](./06_pytorch_syntax_preview/01_tensor_autograd_module_preview.md)
+- 配套代码：`06_pytorch_syntax_preview/01_tensor_autograd_module_preview.py`
 
 ### 07_debug_and_testing
 

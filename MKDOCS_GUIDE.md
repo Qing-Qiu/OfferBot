@@ -29,6 +29,8 @@ http://127.0.0.1:8000/OfferBot/
 
 `tools/serve_mkdocs.py` 默认会把 MkDocs 临时目录放到已忽略的 `site/.mkdocs_tmp/`，避免 `.mkdocs_tmp/` 出现在项目根目录干扰递归扫描。也可以用环境变量 `OFFERBOT_MKDOCS_TMP` 指定其他临时目录。
 
+由于文档站的 `docs/` 页面大量通过 snippet 引用根目录课程源文件，启动脚本会额外 watch `00_Python_Syntax` 到 `07_Algorithm` 以及根目录索引文件。这样修改源讲义后，预览站会自动重新构建；如果浏览器页面没有自动刷新，手动刷新即可。
+
 ## 停止预览服务
 
 查看 8000 端口对应的进程：

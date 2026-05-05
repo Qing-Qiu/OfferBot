@@ -55,12 +55,20 @@ nav:
       - 章节入口: 00_Python_Syntax/README.md
       - 知识树: 00_Python_Syntax/KNOWLEDGE_TREE.md
       - Python 核心: 00_Python_Syntax/01_python_core/README.md
-      - 面向对象: 00_Python_Syntax/02_python_oop/README.md
+      - 面向对象:
+          - 小节入口: 00_Python_Syntax/02_python_oop/README.md
+          - class / self / init: 00_Python_Syntax/02_python_oop/01_class_self_init.md
       - 代码阅读: 00_Python_Syntax/03_python_code_reading/README.md
-      - NumPy 基础: 00_Python_Syntax/04_numpy_basics/README.md
+      - NumPy 基础:
+          - 小节入口: 00_Python_Syntax/04_numpy_basics/README.md
+          - 核心语法: 00_Python_Syntax/04_numpy_basics/01_core_syntax.md
+          - Shape 与矩阵乘法: 00_Python_Syntax/04_numpy_basics/02_shape_and_matmul_drills.md
       - pandas 基础: 00_Python_Syntax/05_pandas_basics/README.md
-      - PyTorch 语法预热: 00_Python_Syntax/06_pytorch_syntax_preview/README.md
+      - PyTorch 语法预热:
+          - 小节入口: 00_Python_Syntax/06_pytorch_syntax_preview/README.md
+          - Tensor / autograd / Module: 00_Python_Syntax/06_pytorch_syntax_preview/01_tensor_autograd_module_preview.md
       - 调试与测试: 00_Python_Syntax/07_debug_and_testing/README.md
+      - 语法对照速查: 00_Python_Syntax/syntax_comparison_cheatsheet.md
   - 01 数学基础:
       - 章节入口: 01_Math_Foundations/README.md
       - 知识树: 01_Math_Foundations/KNOWLEDGE_TREE.md
@@ -82,7 +90,7 @@ nav:
   - 03 PyTorch:
       - 章节入口: 03_PyTorch/README.md
       - 知识树: 03_PyTorch/KNOWLEDGE_TREE.md
-      - 深度学习训练闭环: 03_PyTorch/00_deep_learning_foundations.md
+      - 深度学习训练闭环: 03_PyTorch/01_deep_learning_foundations.md
       - Tensor 基础: 03_PyTorch/02_tensor_basics/README.md
       - Autograd: 03_PyTorch/03_autograd/README.md
       - 训练循环与优化器: 03_PyTorch/06_training_loop_and_optim/README.md

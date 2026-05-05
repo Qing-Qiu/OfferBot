@@ -13,4 +13,4 @@
 当前内容：
 
 - [01_class_self_init.md](./01_class_self_init.md)
-- [01_class_self_init_examples.py](./01_class_self_init_examples.py)
+- 配套代码：`01_class_self_init_examples.py`
