@@ -15,7 +15,7 @@
 08_feature_basics
 ```
 
-说明：后续生成目录时以这些小章节为主；下面的 A/B/C... 继续作为知识点展开索引。
+说明：后续生成目录时以这些小章节为主；下面的 A/B/C... 继续作为知识点展开索引。当前线性回归已先以 `01_numpy_linear_regression_from_scratch.py` 落地，对应 `02_linear_regression` 学习点。
 
 ## A. 监督学习基本语言
 

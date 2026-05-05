@@ -12,7 +12,7 @@
 
 当前内容：
 
-- [01_core_syntax.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/01_core_syntax.md)
-- [01_core_syntax_examples.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/01_core_syntax_examples.py)
-- [02_shape_and_matmul_drills.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/02_shape_and_matmul_drills.md)
-- [02_shape_and_matmul_drills.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/02_shape_and_matmul_drills.py)
+- [01_core_syntax.md](./01_core_syntax.md)
+- [01_core_syntax_examples.py](./01_core_syntax_examples.py)
+- [02_shape_and_matmul_drills.md](./02_shape_and_matmul_drills.md)
+- [02_shape_and_matmul_drills.py](./02_shape_and_matmul_drills.py)

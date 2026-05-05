@@ -40,8 +40,8 @@
 
 当前已落地：
 
-- [01_class_self_init.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/02_python_oop/01_class_self_init.md)
-- [01_class_self_init_examples.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/02_python_oop/01_class_self_init_examples.py)
+- [01_class_self_init.md](./02_python_oop/01_class_self_init.md)
+- [01_class_self_init_examples.py](./02_python_oop/01_class_self_init_examples.py)
 
 ### 03_python_code_reading
 
@@ -63,8 +63,8 @@
 
 当前已落地：
 
-- [01_core_syntax.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/01_core_syntax.md)
-- [01_core_syntax_examples.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/04_numpy_basics/01_core_syntax_examples.py)
+- [01_core_syntax.md](./04_numpy_basics/01_core_syntax.md)
+- [01_core_syntax_examples.py](./04_numpy_basics/01_core_syntax_examples.py)
 
 ### 05_pandas_basics
 
@@ -93,7 +93,7 @@
 
 这份文件跨越整个 00 章，不属于任何单一小章节：
 
-- [syntax_comparison_cheatsheet.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/syntax_comparison_cheatsheet.md)
+- [syntax_comparison_cheatsheet.md](./syntax_comparison_cheatsheet.md)
 
 ## 当前学习建议
 
@@ -104,4 +104,3 @@
 3. `06_pytorch_syntax_preview`
 
 这样可以直接支撑你读懂当前的线性回归脚本和后续 PyTorch 代码。
-

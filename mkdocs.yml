@@ -1,0 +1,109 @@
+site_name: OfferBot
+site_description: 本地 AI 面试私教学习引擎
+site_url: https://qing-qiu.github.io/OfferBot/
+repo_url: https://github.com/Qing-Qiu/OfferBot
+repo_name: Qing-Qiu/OfferBot
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: !relative $config_dir
+      check_paths: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 项目索引:
+      - 知识树总览: KNOWLEDGE_TREE_INDEX.md
+      - 学习地图: LEARNING_MAP.md
+      - MkDocs 使用指南: MKDOCS_GUIDE.md
+  - 00 Python 语法:
+      - 章节入口: 00_Python_Syntax/README.md
+      - 知识树: 00_Python_Syntax/KNOWLEDGE_TREE.md
+      - Python 核心: 00_Python_Syntax/01_python_core/README.md
+      - 面向对象: 00_Python_Syntax/02_python_oop/README.md
+      - 代码阅读: 00_Python_Syntax/03_python_code_reading/README.md
+      - NumPy 基础: 00_Python_Syntax/04_numpy_basics/README.md
+      - pandas 基础: 00_Python_Syntax/05_pandas_basics/README.md
+      - PyTorch 语法预热: 00_Python_Syntax/06_pytorch_syntax_preview/README.md
+      - 调试与测试: 00_Python_Syntax/07_debug_and_testing/README.md
+  - 01 数学基础:
+      - 章节入口: 01_Math_Foundations/README.md
+      - 知识树: 01_Math_Foundations/KNOWLEDGE_TREE.md
+      - 线性代数复习: 01_Math_Foundations/01_linear_algebra_review/README.md
+      - 链式法则与梯度: 01_Math_Foundations/02_chain_rule_and_gradient/README.md
+      - 概率统计: 01_Math_Foundations/03_probability_statistics/README.md
+      - 信息论: 01_Math_Foundations/04_information_theory/README.md
+      - 优化基础: 01_Math_Foundations/05_optimization/README.md
+      - 矩阵求导: 01_Math_Foundations/06_matrix_derivatives/README.md
+      - 推荐系统数学: 01_Math_Foundations/07_recsys_math/README.md
+      - 大模型数学: 01_Math_Foundations/08_llm_math/README.md
+      - 公式速查表: 01_Math_Foundations/09_formula_playbook/README.md
+  - 02 机器学习基础:
+      - 章节入口: 02_ML_Foundations/README.md
+      - 知识树: 02_ML_Foundations/KNOWLEDGE_TREE.md
+      - 逻辑回归: 02_ML_Foundations/03_logistic_regression/README.md
+      - 损失函数: 02_ML_Foundations/04_loss_functions/README.md
+      - 模型评估: 02_ML_Foundations/07_model_evaluation/README.md
+  - 03 PyTorch:
+      - 章节入口: 03_PyTorch/README.md
+      - 知识树: 03_PyTorch/KNOWLEDGE_TREE.md
+      - 深度学习训练闭环: 03_PyTorch/00_deep_learning_foundations.md
+      - Tensor 基础: 03_PyTorch/02_tensor_basics/README.md
+      - Autograd: 03_PyTorch/03_autograd/README.md
+      - 训练循环与优化器: 03_PyTorch/06_training_loop_and_optim/README.md
+  - 04 推荐系统:
+      - 章节入口: 04_RecSys/README.md
+      - 知识树: 04_RecSys/KNOWLEDGE_TREE.md
+      - 系统总览: 04_RecSys/01_recsys_overview/README.md
+      - 召回: 04_RecSys/02_recall/README.md
+      - 排序模型: 04_RecSys/04_ranking_models/README.md
+  - 05 大模型:
+      - 章节入口: 05_LLM/README.md
+      - 知识树: 05_LLM/KNOWLEDGE_TREE.md
+      - Transformer 基础: 05_LLM/01_transformer_basics/README.md
+      - Attention 深入: 05_LLM/02_attention_deep_dive/README.md
+      - RAG: 05_LLM/06_rag/README.md
+  - 06 AI 工程化:
+      - 章节入口: 06_AI_Engineering/README.md
+      - 知识树: 06_AI_Engineering/KNOWLEDGE_TREE.md
+      - MLOps 总览: 06_AI_Engineering/01_mlops_overview/README.md
+      - 模型服务: 06_AI_Engineering/05_model_serving/README.md
+      - 系统设计面试: 06_AI_Engineering/11_system_design_interview/README.md
+  - 07 算法:
+      - 章节入口: 07_Algorithm/README.md
+      - 知识树: 07_Algorithm/KNOWLEDGE_TREE.md

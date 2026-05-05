@@ -11,3 +11,5 @@ env/
 ENV/
 dist/
 build/
+site/
+.mkdocs_tmp/

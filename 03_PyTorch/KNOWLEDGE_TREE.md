@@ -5,7 +5,7 @@
 ## 建议小章节
 
 ```text
-01_deep_learning_basics
+00_deep_learning_foundations
 02_tensor_basics
 03_autograd
 04_nn_module
@@ -16,7 +16,7 @@
 09_interview_playbook
 ```
 
-说明：上面的小章节适合后续逐目录展开；下面的 A/B/C... 仍然保留为更细粒度知识点树。
+说明：上面的小章节适合后续逐目录展开；下面的 A/B/C... 仍然保留为更细粒度知识点树。当前 `00_deep_learning_foundations.md` 作为进入 PyTorch 前的深度学习训练闭环总览，避免和后续模块目录混淆。
 
 ## A. 深度学习基础
 

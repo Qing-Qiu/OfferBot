@@ -20,7 +20,7 @@
 
 ## 当前内容
 
-- `01_numpy_linear_regression_from_scratch.py`：NumPy 从零手写线性回归，理解前向、MSE、梯度下降和训练循环。
+- [01_numpy_linear_regression_from_scratch.py](./01_numpy_linear_regression_from_scratch.py)：NumPy 从零手写线性回归，对应知识树里的 `02_linear_regression` 学习点，理解前向、MSE、梯度下降和训练循环。
 - [03_logistic_regression](./03_logistic_regression/README.md)：logits、sigmoid、BCE、分类阈值、softmax 回归。
 - [04_loss_functions](./04_loss_functions/README.md)：MSE、MAE、BCE、cross entropy、LogLoss、loss vs metric。
 - [07_model_evaluation](./07_model_evaluation/README.md)：回归/分类指标、ROC-AUC、PR-AUC、混淆矩阵、类别不平衡。
@@ -28,7 +28,8 @@
 补充说明：
 
 - 这里的 NumPy 只是实现工具。
-- NumPy 语法基础请先看 `00_Python_Syntax/04_numpy_basics/01_core_syntax.md`。
+- NumPy 语法基础请先看 [00_Python_Syntax/04_numpy_basics/01_core_syntax.md](../00_Python_Syntax/04_numpy_basics/01_core_syntax.md)。
+- 后续如果把线性回归扩成长讲义，可以迁移为 `02_linear_regression/README.md`；当前先保留根目录脚本，避免为单个 demo 额外拆目录。
 
 ## 学习顺序建议
 

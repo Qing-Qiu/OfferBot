@@ -12,6 +12,5 @@
 
 当前内容：
 
-- [01_class_self_init.md](E:/PycharmProjects/OfferBot/00_Python_Syntax/02_python_oop/01_class_self_init.md)
-- [01_class_self_init_examples.py](E:/PycharmProjects/OfferBot/00_Python_Syntax/02_python_oop/01_class_self_init_examples.py)
-
+- [01_class_self_init.md](./01_class_self_init.md)
+- [01_class_self_init_examples.py](./01_class_self_init_examples.py)

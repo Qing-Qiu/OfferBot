@@ -8,13 +8,14 @@ Tensor -> autograd -> nn.Module -> DataLoader -> training loop -> optimizer
 
 ## 当前内容
 
-- [00_deep_learning_foundations.md](./00_deep_learning_foundations.md)：深度学习训练闭环总览。
+- [00_deep_learning_foundations.md](./00_deep_learning_foundations.md)：深度学习训练闭环总览，对应知识树里的 `00_deep_learning_foundations` 基础入口。
 - [02_tensor_basics](./02_tensor_basics/README.md)：Tensor、shape、dtype、device、view/reshape/permute、broadcast、contiguous。
 - [03_autograd](./03_autograd/README.md)：计算图、叶子节点、`grad_fn`、`backward`、梯度累积、`detach`、`no_grad`。
 - [06_training_loop_and_optim](./06_training_loop_and_optim/README.md)：训练循环、eval 循环、optimizer、scheduler、checkpoint、seed。
 
 ## 推荐学习顺序
 
-1. 先读 Tensor，掌握 shape、dtype、device。
-2. 再读 autograd，理解 `loss.backward()` 到底在做什么。
-3. 最后读训练循环，把 `zero_grad -> backward -> step` 连成肌肉记忆。
+1. 先读 `00_deep_learning_foundations.md`，建立训练闭环整体感。
+2. 再读 Tensor，掌握 shape、dtype、device。
+3. 再读 autograd，理解 `loss.backward()` 到底在做什么。
+4. 最后读训练循环，把 `zero_grad -> backward -> step` 连成肌肉记忆。
