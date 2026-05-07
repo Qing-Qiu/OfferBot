@@ -16,74 +16,91 @@ loss 对每个参数的影响是什么
 
 线性回归：
 
-```text
-X.shape = (n, d)
-w.shape = (d, 1)
-y.shape = (n, 1)
-y_hat = Xw + b
-e = y_hat - y
-```
+$$
+X\in\mathbb{R}^{n\times d},\qquad
+w\in\mathbb{R}^{d\times 1},\qquad
+y\in\mathbb{R}^{n\times 1}
+$$
+
+$$
+\hat{y}=Xw+b,\qquad e=\hat{y}-y
+$$
 
 MSE：
 
-```text
-L = (1/n) e^T e
-dL/dy_hat = (2/n) e
-dL/dw = X^T @ dL/dy_hat = (2/n) X^T (Xw + b - y)
-dL/db = sum(dL/dy_hat)
-```
+$$
+L=\frac{1}{n}e^\top e
+$$
+
+$$
+\frac{\partial L}{\partial \hat{y}}=\frac{2}{n}e
+$$
+
+$$
+\frac{\partial L}{\partial w}
+=X^\top\frac{\partial L}{\partial \hat{y}}
+=\frac{2}{n}X^\top(Xw+b-y)
+$$
+
+$$
+\frac{\partial L}{\partial b}=\sum_i \frac{\partial L}{\partial \hat{y}_i}
+$$
 
 sigmoid：
 
-```text
-sigma(z) = 1 / (1 + exp(-z))
-sigma'(z) = sigma(z)(1 - sigma(z))
-```
+$$
+\sigma(z)=\frac{1}{1+\exp(-z)},\qquad
+\sigma'(z)=\sigma(z)(1-\sigma(z))
+$$
 
 BCE：
 
-```text
-L = -[y log p + (1-y) log(1-p)]
-```
+$$
+L=-\left[y\log p+(1-y)\log(1-p)\right]
+$$
 
 sigmoid + BCE：
 
-```text
-p = sigmoid(z)
-dL/dz = p - y
-```
+$$
+p=\sigma(z),\qquad \frac{\partial L}{\partial z}=p-y
+$$
 
 softmax：
 
-```text
-p_i = exp(z_i) / sum_j exp(z_j)
-```
+$$
+p_i=\frac{\exp(z_i)}{\sum_j \exp(z_j)}
+$$
 
 softmax + cross entropy：
 
-```text
-L = -sum_i y_i log p_i
-dL/dz = p - y
-```
+$$
+L=-\sum_i y_i\log p_i,\qquad
+\frac{\partial L}{\partial z}=p-y
+$$
 
 线性层反向：
 
-```text
-Z = XW + b
-G = dL/dZ
-dL/dW = X^T @ G
-dL/db = sum over batch(G)
-dL/dX = G @ W^T
-```
+$$
+Z=XW+b,\qquad G=\frac{\partial L}{\partial Z}
+$$
+
+$$
+\frac{\partial L}{\partial W}=X^\top G,\qquad
+\frac{\partial L}{\partial b}=\sum_{\text{batch}}G,\qquad
+\frac{\partial L}{\partial X}=GW^\top
+$$
 
 BatchNorm / LayerNorm 核心统计量：
 
-```text
-mean = average(x)
-var = average((x - mean)^2)
-x_hat = (x - mean) / sqrt(var + eps)
-y = gamma x_hat + beta
-```
+$$
+\mu=\operatorname{average}(x),\qquad
+\sigma^2=\operatorname{average}\left((x-\mu)^2\right)
+$$
+
+$$
+\hat{x}=\frac{x-\mu}{\sqrt{\sigma^2+\epsilon}},\qquad
+y=\gamma \hat{x}+\beta
+$$
 
 差别直觉：BatchNorm 通常沿 batch 统计，LayerNorm 通常在单个样本的 hidden 维度上统计。
 

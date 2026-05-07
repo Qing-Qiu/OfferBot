@@ -16,40 +16,39 @@
 
 点积匹配：
 
-```text
-score(u, v) = u · v
-```
+$$
+\operatorname{score}(u,v)=u\cdot v
+$$
 
 余弦相似度：
 
-```text
-cos(u, v) = (u · v) / (||u|| ||v||)
-```
+$$
+\cos(u,v)=\frac{u\cdot v}{\|u\|\,\|v\|}
+$$
 
 矩阵分解：
 
-```text
-R_hat = U V^T
-r_hat_ui = u_i · v_j
-```
+$$
+\hat{R}=UV^\top,\qquad \hat{r}_{ij}=u_i\cdot v_j
+$$
 
 FM 二阶交叉：
 
-```text
-y_hat = w_0 + sum_i w_i x_i + sum_{i<j} <v_i, v_j> x_i x_j
-```
+$$
+\hat{y}=w_0+\sum_i w_ix_i+\sum_{i<j}\langle v_i,v_j\rangle x_ix_j
+$$
 
 FM 二阶项高效计算：
 
-```text
-0.5 * sum_f [ (sum_i v_if x_i)^2 - sum_i v_if^2 x_i^2 ]
-```
+$$
+\frac{1}{2}\sum_f\left[\left(\sum_i v_{if}x_i\right)^2-\sum_i v_{if}^2x_i^2\right]
+$$
 
 BPR loss：
 
-```text
-L = -log sigmoid(score(u, i_pos) - score(u, i_neg))
-```
+$$
+L=-\log\sigma\left(s(u,i^+)-s(u,i^-)\right)
+$$
 
 AUC 直觉：
 
@@ -60,10 +59,10 @@ AUC 直觉：
 
 DCG / NDCG：
 
-```text
-DCG@K = sum_i=1^K rel_i / log2(i + 1)
-NDCG@K = DCG@K / IDCG@K
-```
+$$
+\operatorname{DCG}@K=\sum_{i=1}^{K}\frac{\operatorname{rel}_i}{\log_2(i+1)},\qquad
+\operatorname{NDCG}@K=\frac{\operatorname{DCG}@K}{\operatorname{IDCG}@K}
+$$
 
 MAP 直觉：
 
@@ -74,9 +73,9 @@ MAP 直觉：
 
 多目标加权：
 
-```text
-score = w1 * CTR + w2 * CVR + w3 * stay_time + ...
-```
+$$
+\operatorname{score}=w_1\operatorname{CTR}+w_2\operatorname{CVR}+w_3\operatorname{stay\_time}+\cdots
+$$
 
 校准：
 

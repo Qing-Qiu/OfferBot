@@ -10,9 +10,9 @@
 
 目标函数：
 
-```text
-min_theta L(theta)
-```
+$$
+\min_\theta L(\theta)
+$$
 
 凸函数直觉：
 
@@ -30,22 +30,22 @@ min_theta L(theta)
 
 梯度下降：
 
-```text
-theta_t+1 = theta_t - lr * grad L(theta_t)
-```
+$$
+\theta_{t+1}=\theta_t-\eta\nabla L(\theta_t)
+$$
 
 SGD：
 
-```text
-theta_t+1 = theta_t - lr * grad L_batch(theta_t)
-```
+$$
+\theta_{t+1}=\theta_t-\eta\nabla L_{\text{batch}}(\theta_t)
+$$
 
 Momentum：
 
-```text
-v_t = beta v_t-1 + grad L(theta_t)
-theta_t+1 = theta_t - lr * v_t
-```
+$$
+v_t=\beta v_{t-1}+\nabla L(\theta_t),\qquad
+\theta_{t+1}=\theta_t-\eta v_t
+$$
 
 Adam 直觉：
 
@@ -56,32 +56,35 @@ v_t: 梯度平方二阶矩，调节每个参数的步长
 
 L2 正则：
 
-```text
-L_total = L_data + lambda ||theta||_2^2
-```
+$$
+L_{\text{total}}=L_{\text{data}}+\lambda\|\theta\|_2^2
+$$
 
 L1 正则：
 
-```text
-L_total = L_data + lambda ||theta||_1
-```
+$$
+L_{\text{total}}=L_{\text{data}}+\lambda\|\theta\|_1
+$$
 
 约束优化与拉格朗日乘子：
 
-```text
-min_x f(x), subject to g(x) = 0
-Lagrangian = f(x) + lambda g(x)
-```
+$$
+\min_x f(x),\qquad \text{subject to } g(x)=0
+$$
+
+$$
+\mathcal{L}(x,\lambda)=f(x)+\lambda g(x)
+$$
 
 直觉：把“必须满足的约束”合进一个新的目标函数里一起优化。
 
 log-sum-exp：
 
-```text
-log sum_i exp(x_i)
-= m + log sum_i exp(x_i - m)
-m = max_i x_i
-```
+$$
+\log\sum_i \exp(x_i)
+=m+\log\sum_i \exp(x_i-m),\qquad
+m=\max_i x_i
+$$
 
 ## AI 用法
 

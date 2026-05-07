@@ -42,8 +42,12 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra_javascript:
-  - assets/javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+  - assets/javascripts/katex.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
 
 nav:
   - 首页: index.md
@@ -86,6 +90,7 @@ nav:
   - 05 大模型:
       - Transformer 基础: 05_LLM/01_transformer_basics/README.md
       - Attention 深入: 05_LLM/02_attention_deep_dive/README.md
+      - 位置编码: 05_LLM/03_position_encoding/README.md
       - RAG: 05_LLM/06_rag/README.md
   - 06 AI 工程化:
       - MLOps 总览: 06_AI_Engineering/01_mlops_overview/README.md

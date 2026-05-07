@@ -7,8 +7,8 @@
 ```text
 01_transformer_basics
 02_attention_deep_dive
-03_pretraining_and_posttraining
-04_finetuning
+03_position_encoding
+04_training_and_alignment
 05_inference_optimization
 06_rag
 07_agent_and_tool_calling
@@ -22,7 +22,7 @@
 
 - A1 Tokenization：BPE / WordPiece / SentencePiece
 - A2 Token Embedding
-- A3 位置编码
+- A3 位置编码：absolute PE / sinusoidal / relative bias / RoPE / ALiBi
 - A4 Scaled Dot-Product Attention
 - A5 Multi-Head Attention
 - A6 FFN
@@ -111,7 +111,7 @@
 
 - H1 Transformer 为什么并行
 - H2 Attention 复杂度
-- H3 为什么需要位置编码
+- H3 为什么需要位置编码：顺序感、相对距离、RoPE 旋转直觉
 - H4 PreNorm vs PostNorm
 - H5 KV Cache 节省什么
 - H6 RAG 如何缓解幻觉

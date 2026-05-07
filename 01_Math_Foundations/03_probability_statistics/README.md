@@ -14,33 +14,33 @@
 
 条件概率：
 
-```text
-P(A | B) = P(A, B) / P(B)
-```
+$$
+P(A\mid B)=\frac{P(A,B)}{P(B)}
+$$
 
 贝叶斯公式：
 
-```text
-P(A | B) = P(B | A) P(A) / P(B)
-```
+$$
+P(A\mid B)=\frac{P(B\mid A)P(A)}{P(B)}
+$$
 
 期望：
 
-```text
-E[X] = sum_x x P(X = x)
-```
+$$
+\mathbb{E}[X]=\sum_x xP(X=x)
+$$
 
 方差：
 
-```text
-Var(X) = E[(X - E[X])^2]
-```
+$$
+\operatorname{Var}(X)=\mathbb{E}\left[(X-\mathbb{E}[X])^2\right]
+$$
 
 协方差：
 
-```text
-Cov(X, Y) = E[(X - E[X])(Y - E[Y])]
-```
+$$
+\operatorname{Cov}(X,Y)=\mathbb{E}\left[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])\right]
+$$
 
 常见分布：
 
@@ -53,28 +53,29 @@ Categorical: 多类别离散分布，例如 token 类别
 
 最大似然估计 MLE：
 
-```text
-theta_hat = argmax_theta product_i P(y_i | x_i; theta)
-```
+$$
+\hat{\theta}=\arg\max_\theta \prod_i P(y_i\mid x_i;\theta)
+$$
 
 实践中常取 log：
 
-```text
-theta_hat = argmax_theta sum_i log P(y_i | x_i; theta)
-```
+$$
+\hat{\theta}=\arg\max_\theta \sum_i \log P(y_i\mid x_i;\theta)
+$$
 
 最大后验估计 MAP：
 
-```text
-theta_hat = argmax_theta P(theta | D)
-= argmax_theta P(D | theta) P(theta)
-```
+$$
+\hat{\theta}
+=\arg\max_\theta P(\theta\mid D)
+=\arg\max_\theta P(D\mid\theta)P(\theta)
+$$
 
 经验风险最小化：
 
-```text
-min_theta (1/n) sum_i L(f_theta(x_i), y_i)
-```
+$$
+\min_\theta \frac{1}{n}\sum_i L(f_\theta(x_i),y_i)
+$$
 
 ## AI 用法
 
@@ -84,9 +85,9 @@ min_theta (1/n) sum_i L(f_theta(x_i), y_i)
 
 推荐系统里的点击、转化、曝光都可以看成随机事件。CTR 模型学习的是：
 
-```text
-P(click = 1 | user, item, context)
-```
+$$
+P(\operatorname{click}=1\mid \operatorname{user},\operatorname{item},\operatorname{context})
+$$
 
 A/B 实验用统计方法判断两个策略的指标差异是真效果，还是随机波动。
 

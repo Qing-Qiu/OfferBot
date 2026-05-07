@@ -24,44 +24,41 @@ shape 能不能对上
 
 点积：
 
-```text
-x · w = sum_i x_i w_i
-```
+$$
+x \cdot w = \sum_i x_i w_i
+$$
 
 矩阵乘法：
 
-```text
-C = A @ B
-C_ij = sum_k A_ik B_kj
-```
+$$
+C = AB,\qquad C_{ij} = \sum_k A_{ik}B_{kj}
+$$
 
 转置、单位矩阵、逆矩阵：
 
-```text
-(A^T)_ij = A_ji
-AI = IA = A
-A A^-1 = A^-1 A = I
-```
+$$
+(A^\top)_{ij} = A_{ji},\qquad AI = IA = A,\qquad AA^{-1}=A^{-1}A=I
+$$
 
 秩：
 
-```text
-rank(A) = 矩阵中线性无关行/列的最大数量
-```
+$$
+\operatorname{rank}(A)=\text{矩阵中线性无关行/列的最大数量}
+$$
 
 特征值与特征向量：
 
-```text
-Av = lambda v
-```
+$$
+Av = \lambda v
+$$
 
 含义：矩阵 `A` 作用到 `v` 后，`v` 的方向不变，只被拉伸或压缩了 `lambda` 倍。
 
 SVD：
 
-```text
-A = U Sigma V^T
-```
+$$
+A = U\Sigma V^\top
+$$
 
 含义：任意矩阵都可以拆成“旋转/反射 -> 缩放 -> 旋转/反射”的组合。奇异值越大，对应方向保留的信息越多。
 
@@ -77,22 +74,21 @@ y_hat.shape = (n,) 或 (n, 1)
 
 L2 范数与欧氏距离：
 
-```text
-||x||_2 = sqrt(sum_i x_i^2)
-dist(x, y) = ||x - y||_2
-```
+$$
+\|x\|_2 = \sqrt{\sum_i x_i^2},\qquad \operatorname{dist}(x,y)=\|x-y\|_2
+$$
 
 余弦相似度：
 
-```text
-cos(x, y) = (x · y) / (||x||_2 ||y||_2)
-```
+$$
+\cos(x,y)=\frac{x\cdot y}{\|x\|_2\|y\|_2}
+$$
 
 投影：
 
-```text
-proj_u(x) = ((x · u) / (u · u)) u
-```
+$$
+\operatorname{proj}_u(x)=\frac{x\cdot u}{u\cdot u}u
+$$
 
 PCA 的核心：
 
@@ -124,9 +120,9 @@ Q @ K.transpose(-2, -1) -> (B, H, T_q, T_k)
 
 在推荐系统里，用户向量 `u` 和物品向量 `v` 的点积常被当作匹配分数：
 
-```text
-score = u · v
-```
+$$
+\operatorname{score}(u,v)=u\cdot v
+$$
 
 在向量检索里，余弦相似度更关注方向，点积会同时受方向和向量长度影响。
 

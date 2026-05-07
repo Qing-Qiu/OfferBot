@@ -10,13 +10,19 @@
 
 ```text
 (m, k) @ (k, n) -> (m, n)
-C_ij = sum_k A_ik B_kj
 ```
+
+$$
+C_{ij}=\sum_k A_{ik}B_{kj}
+$$
 
 线性层：
 
+$$
+Z=XW+b
+$$
+
 ```text
-Z = XW + b
 X: (B, d_in)
 W: (d_in, d_out)
 b: (d_out,)
@@ -25,73 +31,91 @@ Z: (B, d_out)
 
 线性层反向：
 
-```text
-G = dL/dZ
-dL/dW = X^T @ G
-dL/db = sum over batch(G)
-dL/dX = G @ W^T
-```
+$$
+G=\frac{\partial L}{\partial Z}
+$$
+
+$$
+\frac{\partial L}{\partial W}=X^\top G,\qquad
+\frac{\partial L}{\partial b}=\sum_{\text{batch}}G,\qquad
+\frac{\partial L}{\partial X}=GW^\top
+$$
 
 MSE：
 
-```text
-L = (1/n) sum_i (y_hat_i - y_i)^2
-dL/dy_hat = (2/n)(y_hat - y)
-```
+$$
+L=\frac{1}{n}\sum_i(\hat{y}_i-y_i)^2,\qquad
+\frac{\partial L}{\partial \hat{y}}=\frac{2}{n}(\hat{y}-y)
+$$
 
 sigmoid：
 
-```text
-sigma(z) = 1 / (1 + exp(-z))
-sigma'(z) = sigma(z)(1 - sigma(z))
-```
+$$
+\sigma(z)=\frac{1}{1+\exp(-z)},\qquad
+\sigma'(z)=\sigma(z)(1-\sigma(z))
+$$
 
 BCE：
 
-```text
-L = -[y log p + (1-y) log(1-p)]
-sigmoid + BCE: dL/dz = p - y
-```
+$$
+L=-\left[y\log p+(1-y)\log(1-p)\right],\qquad
+\text{sigmoid + BCE: }\frac{\partial L}{\partial z}=p-y
+$$
 
 softmax：
 
-```text
-p_i = exp(z_i) / sum_j exp(z_j)
-```
+$$
+p_i=\frac{\exp(z_i)}{\sum_j\exp(z_j)}
+$$
 
 softmax + cross entropy：
 
-```text
-L = -sum_i y_i log p_i
-dL/dz = p - y
-```
+$$
+L=-\sum_i y_i\log p_i,\qquad
+\frac{\partial L}{\partial z}=p-y
+$$
 
 熵、交叉熵、KL：
 
-```text
-H(P) = -sum_x P(x) log P(x)
-H(P, Q) = -sum_x P(x) log Q(x)
-KL(P || Q) = sum_x P(x) log(P(x) / Q(x))
-H(P, Q) = H(P) + KL(P || Q)
-```
+$$
+H(P)=-\sum_x P(x)\log P(x)
+$$
+
+$$
+H(P,Q)=-\sum_x P(x)\log Q(x)
+$$
+
+$$
+D_{\mathrm{KL}}(P\|Q)=\sum_x P(x)\log\frac{P(x)}{Q(x)}
+$$
+
+$$
+H(P,Q)=H(P)+D_{\mathrm{KL}}(P\|Q)
+$$
 
 MLE / MAP：
 
-```text
-MLE: argmax_theta sum_i log P(y_i | x_i; theta)
-MAP: argmax_theta [log P(D | theta) + log P(theta)]
-```
+$$
+\operatorname{MLE}:\quad \arg\max_\theta \sum_i \log P(y_i\mid x_i;\theta)
+$$
+
+$$
+\operatorname{MAP}:\quad \arg\max_\theta \left[\log P(D\mid\theta)+\log P(\theta)\right]
+$$
 
 梯度下降：
 
-```text
-theta <- theta - lr * grad_theta L
-```
+$$
+\theta\leftarrow\theta-\eta\nabla_\theta L
+$$
 
 Attention：
 
+$$
+\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^\top}{\sqrt{D_h}}\right)V
+$$
+
 ```text
-Attention(Q,K,V) = softmax(QK^T / sqrt(D_h)) V
 Q,K,V: (B, H, T, D_h)
 QK^T: (B, H, T, T)
 output: (B, H, T, D_h)
@@ -99,29 +123,28 @@ output: (B, H, T, D_h)
 
 FM 二阶项：
 
-```text
-sum_{i<j} <v_i, v_j> x_i x_j
-```
+$$
+\sum_{i<j}\langle v_i,v_j\rangle x_ix_j
+$$
 
 BPR：
 
-```text
-L = -log sigmoid(score_pos - score_neg)
-```
+$$
+L=-\log\sigma(s_{\text{pos}}-s_{\text{neg}})
+$$
 
 NDCG：
 
-```text
-DCG@K = sum_i=1^K rel_i / log2(i + 1)
-NDCG@K = DCG@K / IDCG@K
-```
+$$
+\operatorname{DCG}@K=\sum_{i=1}^{K}\frac{\operatorname{rel}_i}{\log_2(i+1)},\qquad
+\operatorname{NDCG}@K=\frac{\operatorname{DCG}@K}{\operatorname{IDCG}@K}
+$$
 
 LoRA：
 
-```text
-W' = W + BA
-rank(BA) <= r
-```
+$$
+W'=W+BA,\qquad \operatorname{rank}(BA)\le r
+$$
 
 ## AI 用法
 

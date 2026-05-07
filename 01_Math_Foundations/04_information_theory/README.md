@@ -14,45 +14,45 @@
 
 信息量：
 
-```text
-I(x) = -log P(x)
-```
+$$
+I(x)=-\log P(x)
+$$
 
 熵：
 
-```text
-H(P) = -sum_x P(x) log P(x)
-```
+$$
+H(P)=-\sum_x P(x)\log P(x)
+$$
 
 交叉熵：
 
-```text
-H(P, Q) = -sum_x P(x) log Q(x)
-```
+$$
+H(P,Q)=-\sum_x P(x)\log Q(x)
+$$
 
 KL 散度：
 
-```text
-KL(P || Q) = sum_x P(x) log(P(x) / Q(x))
-```
+$$
+D_{\mathrm{KL}}(P\|Q)=\sum_x P(x)\log\frac{P(x)}{Q(x)}
+$$
 
 关系式：
 
-```text
-H(P, Q) = H(P) + KL(P || Q)
-```
+$$
+H(P,Q)=H(P)+D_{\mathrm{KL}}(P\|Q)
+$$
 
 分类交叉熵 one-hot 形式：
 
-```text
-L = -log p_true_class
-```
+$$
+L=-\log p_{\text{true class}}
+$$
 
 困惑度：
 
-```text
-PPL = exp(average negative log likelihood)
-```
+$$
+\operatorname{PPL}=\exp(\text{average negative log likelihood})
+$$
 
 ## AI 用法
 

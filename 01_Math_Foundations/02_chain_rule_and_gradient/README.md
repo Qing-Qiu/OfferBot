@@ -18,53 +18,54 @@
 
 一元导数：
 
-```text
-f'(x) = df / dx
-```
+$$
+f'(x)=\frac{df}{dx}
+$$
 
 偏导数：
 
-```text
-partial f / partial x_i
-```
+$$
+\frac{\partial f}{\partial x_i}
+$$
 
 梯度：
 
-```text
-grad f(x) = [partial f / partial x_1, ..., partial f / partial x_d]
-```
+$$
+\nabla f(x)=\left[\frac{\partial f}{\partial x_1},\ldots,\frac{\partial f}{\partial x_d}\right]
+$$
 
 一元链式法则：
 
-```text
-y = f(g(x))
-dy/dx = dy/dg * dg/dx
-```
+$$
+y=f(g(x)),\qquad \frac{dy}{dx}=\frac{dy}{dg}\frac{dg}{dx}
+$$
 
 多层链式法则：
 
-```text
-L -> y_hat -> z -> W
-partial L / partial W
-= partial L / partial y_hat
-* partial y_hat / partial z
-* partial z / partial W
-```
+$$
+\frac{\partial L}{\partial W}
+=\frac{\partial L}{\partial \hat{y}}
+\frac{\partial \hat{y}}{\partial z}
+\frac{\partial z}{\partial W}
+$$
 
 梯度下降：
 
-```text
-theta <- theta - lr * grad_theta L
-```
+$$
+\theta \leftarrow \theta-\eta\nabla_\theta L
+$$
 
 线性层局部梯度：
 
-```text
-z = XW + b
-dL/dW = X^T @ dL/dz
-dL/db = sum over batch(dL/dz)
-dL/dX = dL/dz @ W^T
-```
+$$
+z=XW+b
+$$
+
+$$
+\frac{\partial L}{\partial W}=X^\top\frac{\partial L}{\partial z},\qquad
+\frac{\partial L}{\partial b}=\sum_{\text{batch}}\frac{\partial L}{\partial z},\qquad
+\frac{\partial L}{\partial X}=\frac{\partial L}{\partial z}W^\top
+$$
 
 ## AI 用法
 
