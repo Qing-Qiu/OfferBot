@@ -121,6 +121,8 @@ $$
 
 RoPE 的关键好处是：点积里会自然出现相对位置 `m-n` 的信息，所以它既保留了位置，又更适合建模相对距离。
 
+如果你想把这条结论推清楚，继续看：[01_rope_deep_dive](./01_rope_deep_dive.md)。
+
 ### 6. ALiBi：线性位置偏置
 
 ALiBi 不给 token 加位置向量，而是直接给 attention logits 加一个与距离相关的线性惩罚：

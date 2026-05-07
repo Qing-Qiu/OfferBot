@@ -90,7 +90,9 @@ nav:
   - 05 大模型:
       - Transformer 基础: 05_LLM/01_transformer_basics/README.md
       - Attention 深入: 05_LLM/02_attention_deep_dive/README.md
-      - 位置编码: 05_LLM/03_position_encoding/README.md
+      - 位置编码:
+          - 总览: 05_LLM/03_position_encoding/README.md
+          - RoPE 深入推导: 05_LLM/03_position_encoding/01_rope_deep_dive.md
       - RAG: 05_LLM/06_rag/README.md
   - 06 AI 工程化:
       - MLOps 总览: 06_AI_Engineering/01_mlops_overview/README.md

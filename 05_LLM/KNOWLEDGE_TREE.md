@@ -23,6 +23,7 @@
 - A1 Tokenization：BPE / WordPiece / SentencePiece
 - A2 Token Embedding
 - A3 位置编码：absolute PE / sinusoidal / relative bias / RoPE / ALiBi
+  - A3.1 RoPE 深入推导：二维旋转矩阵、复数直觉、相对位置、KV Cache position_id
 - A4 Scaled Dot-Product Attention
 - A5 Multi-Head Attention
 - A6 FFN

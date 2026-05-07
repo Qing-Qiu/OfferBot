@@ -14,6 +14,7 @@ RAG 如何把外部知识接入模型
 - [01_transformer_basics](./01_transformer_basics/README.md)：token、embedding、position、MHA、FFN、residual、LayerNorm、mask。
 - [02_attention_deep_dive](./02_attention_deep_dive/README.md)：Q/K/V、score shape、mask、MHA/MQA/GQA、复杂度、FlashAttention 直觉。
 - [03_position_encoding](./03_position_encoding/README.md)：绝对位置编码、sinusoidal、relative bias、RoPE、ALiBi、长上下文外推。
+  - [RoPE 深入推导](./03_position_encoding/01_rope_deep_dive.md)：二维旋转矩阵、复数直觉、相对位置推导、KV Cache 注意点。
 - [06_rag](./06_rag/README.md)：文档解析、切分、embedding、向量库、query rewrite、rerank、评估、幻觉。
 
 ## 学习顺序
