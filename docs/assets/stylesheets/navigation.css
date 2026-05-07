@@ -1,0 +1,20 @@
+/*
+ * Keep the Material navigation style, but remove the duplicated top-level
+ * chapter label from the left sidebar. The chapter still exists in the top
+ * tabs; the sidebar starts directly from learning topics.
+ */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary
+    .md-nav--primary
+    > .md-nav__list
+    > .md-nav__item--active.md-nav__item--section
+    > .md-nav__link,
+  .md-sidebar--primary
+    .md-nav--primary
+    > .md-nav__list
+    > .md-nav__item--active.md-nav__item--section
+    > .md-nav
+    > .md-nav__title {
+    display: none !important;
+  }
+}

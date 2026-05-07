@@ -48,53 +48,84 @@ extra_javascript:
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+  - assets/stylesheets/navigation.css
 
 nav:
   - 首页: index.md
-  - 00 Python 语法:
-      - Python 核心: 00_Python_Syntax/01_python_core/README.md
+  - Python 语法:
+      - Python 核心:
+          - 总览: 00_Python_Syntax/01_python_core/README.md
       - 面向对象:
           - class / self / init: 00_Python_Syntax/02_python_oop/01_class_self_init.md
-      - 代码阅读: 00_Python_Syntax/03_python_code_reading/README.md
+      - 代码阅读:
+          - 总览: 00_Python_Syntax/03_python_code_reading/README.md
       - NumPy 基础:
           - 核心语法: 00_Python_Syntax/04_numpy_basics/01_core_syntax.md
           - Shape 与矩阵乘法: 00_Python_Syntax/04_numpy_basics/02_shape_and_matmul_drills.md
-      - pandas 基础: 00_Python_Syntax/05_pandas_basics/README.md
+      - pandas 基础:
+          - 总览: 00_Python_Syntax/05_pandas_basics/README.md
       - PyTorch 语法预热:
           - Tensor / autograd / Module: 00_Python_Syntax/06_pytorch_syntax_preview/01_tensor_autograd_module_preview.md
-      - 调试与测试: 00_Python_Syntax/07_debug_and_testing/README.md
-      - 语法对照速查: 00_Python_Syntax/syntax_comparison_cheatsheet.md
-  - 01 数学基础:
-      - 线性代数复习: 01_Math_Foundations/01_linear_algebra_review/README.md
-      - 链式法则与梯度: 01_Math_Foundations/02_chain_rule_and_gradient/README.md
-      - 概率统计: 01_Math_Foundations/03_probability_statistics/README.md
-      - 信息论: 01_Math_Foundations/04_information_theory/README.md
-      - 优化基础: 01_Math_Foundations/05_optimization/README.md
-      - 矩阵求导: 01_Math_Foundations/06_matrix_derivatives/README.md
-      - 推荐系统数学: 01_Math_Foundations/07_recsys_math/README.md
-      - 大模型数学: 01_Math_Foundations/08_llm_math/README.md
-      - 公式速查表: 01_Math_Foundations/09_formula_playbook/README.md
-  - 02 机器学习基础:
-      - 逻辑回归: 02_ML_Foundations/03_logistic_regression/README.md
-      - 损失函数: 02_ML_Foundations/04_loss_functions/README.md
-      - 模型评估: 02_ML_Foundations/07_model_evaluation/README.md
-  - 03 PyTorch:
-      - 深度学习训练闭环: 03_PyTorch/01_deep_learning_foundations.md
-      - Tensor 基础: 03_PyTorch/02_tensor_basics/README.md
-      - Autograd: 03_PyTorch/03_autograd/README.md
-      - 训练循环与优化器: 03_PyTorch/06_training_loop_and_optim/README.md
-  - 04 推荐系统:
-      - 系统总览: 04_RecSys/01_recsys_overview/README.md
-      - 召回: 04_RecSys/02_recall/README.md
-      - 排序模型: 04_RecSys/04_ranking_models/README.md
-  - 05 大模型:
-      - Transformer 基础: 05_LLM/01_transformer_basics/README.md
-      - Attention 深入: 05_LLM/02_attention_deep_dive/README.md
+      - 调试与测试:
+          - 总览: 00_Python_Syntax/07_debug_and_testing/README.md
+      - 语法对照速查:
+          - 总览: 00_Python_Syntax/syntax_comparison_cheatsheet.md
+  - 数学基础:
+      - 线性代数复习:
+          - 总览: 01_Math_Foundations/01_linear_algebra_review/README.md
+      - 链式法则与梯度:
+          - 总览: 01_Math_Foundations/02_chain_rule_and_gradient/README.md
+      - 概率统计:
+          - 总览: 01_Math_Foundations/03_probability_statistics/README.md
+      - 信息论:
+          - 总览: 01_Math_Foundations/04_information_theory/README.md
+      - 优化基础:
+          - 总览: 01_Math_Foundations/05_optimization/README.md
+      - 矩阵求导:
+          - 总览: 01_Math_Foundations/06_matrix_derivatives/README.md
+      - 推荐系统数学:
+          - 总览: 01_Math_Foundations/07_recsys_math/README.md
+      - 大模型数学:
+          - 总览: 01_Math_Foundations/08_llm_math/README.md
+      - 公式速查表:
+          - 总览: 01_Math_Foundations/09_formula_playbook/README.md
+  - 机器学习基础:
+      - 逻辑回归:
+          - 总览: 02_ML_Foundations/03_logistic_regression/README.md
+      - 损失函数:
+          - 总览: 02_ML_Foundations/04_loss_functions/README.md
+      - 模型评估:
+          - 总览: 02_ML_Foundations/07_model_evaluation/README.md
+  - PyTorch:
+      - 深度学习训练闭环:
+          - 总览: 03_PyTorch/01_deep_learning_foundations.md
+      - Tensor 基础:
+          - 总览: 03_PyTorch/02_tensor_basics/README.md
+      - Autograd:
+          - 总览: 03_PyTorch/03_autograd/README.md
+      - 训练循环与优化器:
+          - 总览: 03_PyTorch/06_training_loop_and_optim/README.md
+  - 推荐系统:
+      - 系统总览:
+          - 总览: 04_RecSys/01_recsys_overview/README.md
+      - 召回:
+          - 总览: 04_RecSys/02_recall/README.md
+      - 排序模型:
+          - 总览: 04_RecSys/04_ranking_models/README.md
+  - 大模型:
+      - Transformer 基础:
+          - 总览: 05_LLM/01_transformer_basics/README.md
+      - Attention 深入:
+          - 总览: 05_LLM/02_attention_deep_dive/README.md
       - 位置编码:
           - 总览: 05_LLM/03_position_encoding/README.md
           - RoPE 深入推导: 05_LLM/03_position_encoding/01_rope_deep_dive.md
-      - RAG: 05_LLM/06_rag/README.md
-  - 06 AI 工程化:
-      - MLOps 总览: 06_AI_Engineering/01_mlops_overview/README.md
-      - 模型服务: 06_AI_Engineering/05_model_serving/README.md
-      - 系统设计面试: 06_AI_Engineering/11_system_design_interview/README.md
+      - RAG:
+          - 总览: 05_LLM/06_rag/README.md
+  - AI 工程化:
+      - MLOps 总览:
+          - 总览: 06_AI_Engineering/01_mlops_overview/README.md
+      - 模型服务:
+          - 总览: 06_AI_Engineering/05_model_serving/README.md
+      - 系统设计面试:
+          - 总览: 06_AI_Engineering/11_system_design_interview/README.md
